@@ -45,19 +45,41 @@
       color: #00ffcc;
     }
 
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
     .btn {
-      display: inline-block;
+      flex: 1 1 200px;
+      max-width: 250px;
       background: #9b2bd2;
-      padding: 12px 24px;
+      padding: 14px 24px;
       color: white;
       border-radius: 8px;
       font-size: 18px;
       text-decoration: none;
       transition: 0.3s ease;
+      font-weight: bold;
     }
 
-    .btn:hover {
-      background: #6c1d9e;
+    .btn.gumroad {
+      background: #28a745; /* أخضر */
+    }
+
+    .btn.gumroad:hover {
+      background: #1e7e34;
+    }
+
+    .btn.payhip {
+      background: #ff5a00; /* برتقالي */
+    }
+
+    .btn.payhip:hover {
+      background: #cc4600;
     }
 
     .payment, .links {
@@ -82,7 +104,10 @@
 
     <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
 
-    <a href="https://wa.me/201066047545" class="btn">📲 اشترِ الآن عبر واتساب</a>
+    <div class="btn-group">
+      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn gumroad" target="_blank" rel="noopener noreferrer">اشترِ عبر Gumroad</a>
+      <a href="https://payhip.com/b/2cJWp" class="btn payhip" target="_blank" rel="noopener noreferrer">اشترِ عبر Payhip</a>
+    </div>
 
     <div class="payment">
       <h3>💳 وسائل الدفع:</h3>
