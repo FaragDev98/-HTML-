@@ -1,177 +1,121 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="كتاب HTML للمبتدئين - اتقن HTML من الصفر باللغة العربية" />
-  <title>كتاب HTML - FaragDev98</title>
-  <link rel="icon" href="📘" />
-  <style>
-    body {
-      font-family: "Arial", sans-serif;
-      background: #f5f9ff;
-      color: #222;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 650px;
-      margin: auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 0 25px rgba(100, 100, 150, 0.15);
-    }
-
-    .cover {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(100, 120, 200, 0.3);
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 32px;
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-
-    p.description {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #444;
-      margin-bottom: 20px;
-    }
-
-    .price {
-      font-size: 24px;
-      margin: 20px 0;
-      color: #2980b9;
-      font-weight: bold;
-    }
-
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 25px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      flex: 1 1 200px;
-      max-width: 250px;
-      background: #2980b9;
-      padding: 14px 24px;
-      color: white;
-      border-radius: 10px;
-      font-size: 18px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 4px 12px rgba(41, 128, 185, 0.6);
-    }
-
-    .btn.gumroad {
-      background: #27ae60;
-    }
-
-    .btn.gumroad:hover {
-      background: #1e8449;
-    }
-
-    .btn.payhip {
-      background: #e67e22;
-    }
-
-    .btn.payhip:hover {
-      background: #ca6c1e;
-    }
-
-    .payment {
-      font-size: 16px;
-      color: #555;
-      line-height: 1.8;
-      margin-bottom: 15px;
-    }
-
-    .payment strong {
-      color: #2980b9;
-      font-size: 18px;
-    }
-
-    .footer {
-      font-size: 14px;
-      color: #888;
-      margin-top: 30px;
-    }
-
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>كتاب HTML للمبتدئين - FaragDev98</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    margin: 0; padding: 0;
+    color: #222;
+    text-align: center;
+  }
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,100,0.1);
+    padding: 20px;
+  }
+  img.cover {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,0,150,0.15);
+  }
+  h1 {
+    color: #1a237e;
+    margin-bottom: 10px;
+  }
+  p.description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .price {
+    font-size: 22px;
+    color: #1565c0;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  a.btn {
+    flex: 1 1 140px;
+    max-width: 180px;
+    background: #1e88e5;
+    color: white;
+    padding: 14px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  a.btn.gumroad {
+    background: #43a047;
+  }
+  a.btn.gumroad:hover {
+    background: #2e7d32;
+  }
+  a.btn.payhip {
+    background: #fb8c00;
+  }
+  a.btn.payhip:hover {
+    background: #ef6c00;
+  }
+  .extra-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,0,150,0.1);
+  }
+  .payment-info {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .payment-info strong {
+    color: #1565c0;
+  }
+  .payment-info a {
+    color: #1565c0;
+    text-decoration: none;
+  }
+  .payment-info a:hover {
+    text-decoration: underline;
+  }
+  .footer {
+    font-size: 14px;
+    color: #888;
+    margin-top: 30px;
+  }
+</style>
 </head>
 <body>
   <div class="container">
-
-    <!-- صورة الغلاف الثابتة -->
-    <img
-      src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg"
-      alt="غلاف الكتاب"
-      class="cover"
-    />
-
+    <img src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg" alt="غلاف كتاب HTML" class="cover" />
     <h1>📘 كتاب HTML للمبتدئين</h1>
-    <p class="description">
-      اتقن HTML من الصفر بأسلوب مبسط ومرتب باللغة العربية<br />
-      مناسب لأي مبتدئ في عالم البرمجة، يشمل أمثلة وصور توضيحية.
-    </p>
-
+    <p class="description">اتقن HTML من الصفر بأسلوب مبسط ومرتب باللغة العربية<br>مناسب لأي مبتدئ في عالم البرمجة، يشمل أمثلة وصور توضيحية.</p>
     <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
-
     <div class="btn-group">
-      <a
-        href="https://faragdev98.gumroad.com/l/htmlbook"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn gumroad"
-        >اشترِ عبر Gumroad</a
-      >
-      <a
-        href="https://payhip.com/b/2cJWp"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn payhip"
-        >اشترِ عبر Payhip</a
-      >
+      <a href="https://faragdev98.gumroad.com/l/htmlbook" target="_blank" class="btn gumroad">اشترِ عبر Gumroad</a>
+      <a href="https://payhip.com/b/2cJWp" target="_blank" class="btn payhip">اشترِ عبر Payhip</a>
     </div>
-
-    <!-- صورة إضافية واحدة فقط -->
-    <img
-      src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg"
-      alt="صورة إضافية"
-      class="cover"
-      style="margin-bottom: 30px;"
-    />
-
-    <div class="payment">
-      <p><strong>طريقة الشراء والدفع:</strong></p>
-      <p>يمكنك الدفع عبر فودافون كاش، أورنج كاش، وي كاش، أو باي بال.</p>
-      <p>
-        <strong>رقم واتساب للدعم والشراء المباشر:</strong>
-        <a href="https://wa.me/201066047545" target="_blank"
-          >01066047545</a
-        >
-      </p>
+    <img src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg" alt="صورة توضيحية" class="extra-image" />
+    <div class="payment-info">
+      <p><strong>طرق الدفع والدعم:</strong></p>
+      <p>فودافون كاش، أورنج كاش، وي كاش، أو باي بال</p>
+      <p><strong>للدعم والشراء المباشر عبر واتساب:</strong> <a href="https://wa.me/201066047545" target="_blank">01066047545</a></p>
     </div>
-
     <div class="footer">© 2025 FaragDev98 | جميع الحقوق محفوظة</div>
   </div>
 </body>
