@@ -25,26 +25,11 @@
       box-shadow: 0 0 25px rgba(100, 100, 150, 0.15);
     }
 
-    .cover, .extra-img {
+    .cover {
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(100, 120, 200, 0.3);
       margin-bottom: 20px;
-    }
-
-    .images-row {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-    }
-
-    .images-row img {
-      width: calc(50% - 10px);
-      max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(100, 120, 200, 0.3);
     }
 
     h1 {
@@ -136,10 +121,10 @@
 <body>
   <div class="container">
 
-    <!-- صورة الغلاف المتحركة -->
+    <!-- صورة الغلاف الثابتة -->
     <img
-      src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif"
-      alt="صورة غلاف متحركة - HTML book"
+      src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg"
+      alt="غلاف الكتاب"
       class="cover"
     />
 
@@ -168,17 +153,13 @@
       >
     </div>
 
-    <!-- صور إضافية -->
-    <div class="images-row">
-      <img
-        src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg"
-        alt="صورة إضافية 1"
-      />
-      <img
-        src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg"
-        alt="صورة إضافية 2"
-      />
-    </div>
+    <!-- صورة إضافية واحدة فقط -->
+    <img
+      src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg"
+      alt="صورة إضافية"
+      class="cover"
+      style="margin-bottom: 30px;"
+    />
 
     <div class="payment">
       <p><strong>طريقة الشراء والدفع:</strong></p>
