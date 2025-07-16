@@ -1,188 +1,126 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>شراء كتاب HTML - FaragDev98</title>
+  <meta charset="UTF-8">
+  <title>كتاب HTML للمبتدئين</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #f3e5f5, #e8f5e9);
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      background: #f3f3f3;
       color: #333;
       text-align: center;
-      animation: fadeIn 1.5s ease;
+      padding: 20px;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    header {
-      background: #6a1b9a;
-      color: white;
-      padding: 15px 0;
-      font-size: 1.4rem;
-      font-weight: bold;
-      animation: fadeHeader 4s ease-in-out infinite;
-    }
-
-    @keyframes fadeHeader {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
-    }
-
-    .container {
-      max-width: 750px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      padding: 30px 25px;
-    }
-
-    h1 {
-      color: #4a148c;
-      font-size: 2.3rem;
-      margin-bottom: 10px;
-    }
-
-    p.summary, p.description {
-      font-size: 1.15rem;
-      line-height: 1.9;
-      color: #444;
-      margin-bottom: 25px;
-    }
-
-    .cover, .certificate, .animation {
+    img.cover {
       width: 100%;
-      max-height: 420px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 25px;
+      max-width: 400px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
-
-    .price {
-      font-size: 1.5rem;
-      color: #2e7d32;
-      font-weight: bold;
-      margin: 20px 0;
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .btns {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-
-    a.btn {
-      padding: 14px 25px;
-      background: #7b1fa2;
+    .buttons a {
+      display: block;
+      background: #6c63ff;
       color: white;
       text-decoration: none;
-      font-size: 1.1rem;
+      margin: 10px auto;
+      padding: 10px 15px;
       border-radius: 10px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3);
-      width: 80%;
+      width: 90%;
       max-width: 300px;
+      font-size: 18px;
     }
-
-    a.btn:hover {
-      background: #4a0072;
-      transform: scale(1.05);
+    .payment-button {
+      background: #4caf50;
     }
-
-    .whatsapp {
-      background: #25d366;
+    .whatsapp-button {
+      background: #25D366;
     }
-
-    .whatsapp:hover {
-      background: #1ebe5d;
+    .policy {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
     }
-
-    .instruction {
-      background: #ede7f6;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 30px;
-      line-height: 1.8;
-      color: #4a148c;
-      font-size: 1rem;
-    }
-
-    .section-title {
-      font-size: 1.4rem;
-      color: #6a1b9a;
-      margin: 25px 0 15px;
-    }
-
-    .footer {
-      font-size: 0.9rem;
-      color: #777;
-      margin: 35px 0 10px;
-    }
-
-    .animation {
-      margin-top: 40px;
-      max-height: 250px;
+    img.certificate {
+      width: 100%;
+      max-width: 300px;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
 
-  <header>FaragDev98</header>
+  <!-- 📷 غلاف الكتاب -->
+  <img src="cover.jpg" alt="غلاف الكتاب" class="cover">
 
-  <div class="container">
-    <h1>📘 كتاب HTML للمبتدئين</h1>
-
-    <p class="summary">
-      هل تريد أن تبدأ رحلتك في برمجة المواقع؟  
-      هذا الكتاب هو دليلك المثالي لتعلم HTML من الأساس حتى إنشاء صفحات ويب احترافية!  
-      مناسب للمبتدئين ويحتوي على شروحات منظمة، أمثلة عملية، وتمارين تطبيقية.
+  <!-- 📖 نبذة عن الكتاب -->
+  <div class="section">
+    <h1>كتاب HTML للمبتدئين</h1>
+    <p>
+      هل تريد أن تبدأ رحلتك في برمجة المواقع؟ هذا الكتاب هو دليلك المثالي لتعلم HTML من الأساس حتى إنشاء صفحات ويب احترافية! مناسب للمبتدئين ويحتوي على شروحات منظمة، أمثلة عملية، وتمارين تطبيقية.
     </p>
-
-    <p class="description">
+    <p>
       تعلم HTML من البداية حتى الاحتراف باللغة العربية، بأسلوب مبسط وشامل مع صور توضيحية.
     </p>
-
-    <!-- صورة الغلاف -->
-    <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="cover" />
-
-    <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
-
-    <!-- أزرار الشراء -->
-    <div class="btns">
-      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn">شراء من Gumroad</a>
-      <a href="https://payhip.com/b/2cJWp" class="btn">شراء من Payhip</a>
-      <a href="https://wa.me/201066047545" class="btn whatsapp">شراء عبر واتساب</a>
-      <a href="download/تعلم إنجليزي.apk" class="btn" download>📲 تحميل تطبيق تعلم الإنجليزية</a>
-    </div>
-
-    <!-- شهادة -->
-    <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
-
-    <!-- تعليمات الشراء -->
-    <div class="instruction">
-      <strong>🔒 خطوات الشراء عبر واتساب:</strong><br>
-      1. أرسل رسالة إلى الرقم: <a href="https://wa.me/201066047545" style="color:#00796b">01066047545</a><br>
-      2. اختر طريقة الدفع (فودافون كاش / أورنج كاش / وي كاش / بايبال).<br>
-      3. بعد التحويل، أرسل صورة الإيصال.<br>
-      4. سيتم إرسال رابط تحميل الكتاب فور التأكد.
-    </div>
-
-    <!-- صورة متحركة -->
-    <img src="https://i.postimg.cc/yN9CQDXH/typing-animation.gif" alt="كاتب على الكمبيوتر" class="animation" />
-
-    <div class="footer">
-      جميع الحقوق محفوظة © 2025 FaragDev98<br>
-      <a href="#" style="color:#6a1b9a;">الشروط والأحكام</a> | <a href="#" style="color:#6a1b9a;">سياسة الخصوصية</a>
-    </div>
+    <h3>💰 السعر: 2 دولار (100 جنيه مصري)</h3>
   </div>
 
+  <!-- 💳 أزرار الشراء -->
+  <div class="section buttons">
+    <a href="https://faragdev98.gumroad.com/l/html-book" target="_blank">شراء من Gumroad</a>
+    <a href="https://payhip.com/b/yourpayhiplink" target="_blank">شراء من Payhip</a>
+    <a href="https://wa.me/201066047545" class="whatsapp-button" target="_blank">شراء عبر واتساب</a>
+  </div>
+
+  <!-- 💳 أرقام الدفع -->
+  <div class="section">
+    <h2>طرق الدفع:</h2>
+    <a class="payment-button" onclick="copyText('01066047545')">فودافون كاش: 01066047545</a>
+    <a class="payment-button" onclick="copyText('01285895096')">أورنج كاش: 01285895096</a>
+    <a class="payment-button" onclick="copyText('01558516081')">وي كاش: 01558516081</a>
+    <a class="payment-button" onclick="copyText('Farajbdallh891@gmail.com')">باي بال: Farajbdallh891@gmail.com</a>
+  </div>
+
+  <!-- 📝 الشروط والخصوصية -->
+  <div class="section policy">
+    <h3>شروط وأحكام الاستخدام</h3>
+    <p>يُمنع نشر أو إعادة بيع الكتاب بدون إذن. الشراء يعني الموافقة على هذه الشروط.</p>
+
+    <h3>سياسة الخصوصية</h3>
+    <p>نحترم خصوصيتك. لا يتم مشاركة بياناتك مع أي طرف ثالث.</p>
+  </div>
+
+  <!-- 🏆 شهادة الإنجاز -->
+  <div class="section">
+    <h3>📄 شهادة إتمام الكورس</h3>
+    <img src="certificate-coursera.jpg" alt="شهادة الإنجاز" class="certificate">
+  </div>
+
+  <!-- 📱 التطبيق -->
+  <div class="section">
+    <h3>📲 تطبيق تعلم الإنجليزية بسهولة</h3>
+    <p>يمكنك الآن تحميل التطبيق لتعلم الإنجليزية بطريقة ممتعة وسهلة!</p>
+    <a href="your-app-link" class="buttons">تحميل التطبيق الآن</a>
+  </div>
+
+  <!-- الحقوق -->
+  <div class="policy">
+    جميع الحقوق محفوظة © 2025 FaragDev98
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      alert("تم نسخ الرقم: " + text);
+    }
+  </script>
 </body>
 </html>
