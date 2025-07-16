@@ -3,85 +3,97 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>كتاب HTML للمبتدئين - FaragDev98</title>
+<title>📘 كتاب HTML للمبتدئين - FaragDev98</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background: #f0f4ff;
-    margin: 0; padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #dce9fb 0%, #f5f7fa 100%);
+    margin: 0;
     color: #222;
     text-align: center;
+    padding: 20px;
   }
   .container {
-    max-width: 600px;
+    max-width: 620px;
     margin: 40px auto;
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,100,0.1);
-    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(100, 115, 140, 0.15);
+    padding: 30px 25px;
   }
   img.cover {
     width: 100%;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 10px rgba(0,0,150,0.15);
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(50, 75, 130, 0.2);
+    object-fit: contain;
   }
   h1 {
     color: #1a237e;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
   }
   p.description {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
   }
   .price {
-    font-size: 22px;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #1565c0;
-    font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .btn-group {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 35px;
   }
   a.btn {
-    flex: 1 1 140px;
-    max-width: 180px;
-    background: #1e88e5;
-    color: white;
-    padding: 14px 0;
-    border-radius: 8px;
-    text-decoration: none;
+    flex: 1 1 180px;
+    max-width: 220px;
+    padding: 15px 0;
+    border-radius: 12px;
     font-weight: 700;
-    transition: background-color 0.3s ease;
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
   a.btn.gumroad {
     background: #43a047;
   }
   a.btn.gumroad:hover {
     background: #2e7d32;
+    box-shadow: 0 12px 30px rgba(46,125,50,0.5);
+    transform: translateY(-5px);
   }
   a.btn.payhip {
     background: #fb8c00;
   }
   a.btn.payhip:hover {
     background: #ef6c00;
+    box-shadow: 0 12px 30px rgba(239,108,0,0.5);
+    transform: translateY(-5px);
   }
-  .extra-image {
+  img.extra-image {
     width: 100%;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 10px rgba(0,0,150,0.1);
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(50, 75, 130, 0.1);
+    margin-bottom: 30px;
+    object-fit: contain;
   }
   .payment-info {
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
   }
   .payment-info strong {
     color: #1565c0;
@@ -94,27 +106,61 @@
     text-decoration: underline;
   }
   .footer {
-    font-size: 14px;
-    color: #888;
-    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 40px;
+  }
+  @media (max-width: 480px) {
+    a.btn {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
   }
 </style>
 </head>
 <body>
   <div class="container">
-    <img src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg" alt="غلاف كتاب HTML" class="cover" />
+    <img
+      src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg"
+      alt="غلاف كتاب HTML للمبتدئين"
+      class="cover"
+    />
     <h1>📘 كتاب HTML للمبتدئين</h1>
-    <p class="description">اتقن HTML من الصفر بأسلوب مبسط ومرتب باللغة العربية<br>مناسب لأي مبتدئ في عالم البرمجة، يشمل أمثلة وصور توضيحية.</p>
+    <p class="description">
+      اتقن HTML من الصفر بأسلوب مبسط ومرتب باللغة العربية<br />
+      مناسب لأي مبتدئ في عالم البرمجة، يشمل أمثلة وصور توضيحية.
+    </p>
     <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
     <div class="btn-group">
-      <a href="https://faragdev98.gumroad.com/l/htmlbook" target="_blank" class="btn gumroad">اشترِ عبر Gumroad</a>
-      <a href="https://payhip.com/b/2cJWp" target="_blank" class="btn payhip">اشترِ عبر Payhip</a>
+      <a
+        href="https://faragdev98.gumroad.com/l/htmlbook"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn gumroad"
+        >اشترِ عبر Gumroad</a
+      >
+      <a
+        href="https://payhip.com/b/2cJWp"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn payhip"
+        >اشترِ عبر Payhip</a
+      >
     </div>
-    <img src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg" alt="صورة توضيحية" class="extra-image" />
+    <img
+      src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg"
+      alt="شهادة كورس كورسيرا"
+      class="extra-image"
+    />
     <div class="payment-info">
       <p><strong>طرق الدفع والدعم:</strong></p>
       <p>فودافون كاش، أورنج كاش، وي كاش، أو باي بال</p>
-      <p><strong>للدعم والشراء المباشر عبر واتساب:</strong> <a href="https://wa.me/201066047545" target="_blank">01066047545</a></p>
+      <p>
+        <strong>للدعم والشراء المباشر عبر واتساب:</strong>
+        <a href="https://wa.me/201066047545" target="_blank"
+          >01066047545</a
+        >
+      </p>
     </div>
     <div class="footer">© 2025 FaragDev98 | جميع الحقوق محفوظة</div>
   </div>
