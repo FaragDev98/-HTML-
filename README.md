@@ -1,44 +1,37 @@
-# HTML Beginner's Book - FaragDev98
+# كتاب HTML للمبتدئين - FaragDev98
 
-![HTML Book Cover Animated](https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif)
+![غلاف الكتاب](https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg)
 
-Welcome to the **HTML Beginner's Book** repository!  
-This repository contains the complete **HTML book for beginners**, designed to teach you HTML from scratch in Arabic with clear examples and illustrations.
-
----
-
-## 📘 About the Book
-
-- Learn HTML step-by-step with easy-to-understand explanations.  
-- Perfect for anyone starting web development.  
-- Includes practical examples and visual guides.  
-- Price: $2 (100 EGP)
+مرحبًا بك في مستودع **كتاب HTML للمبتدئين**!  
+هذا المستودع يحتوي على الكتاب الكامل لتعلم HTML من الصفر باللغة العربية بأسلوب واضح وسهل.
 
 ---
 
-## 🚀 How to Buy
+## 📘 عن الكتاب
 
-You can purchase the book via:
+- اتقن HTML خطوة بخطوة بأسلوب مبسط ومنظم.  
+- مناسب لجميع المبتدئين في تطوير الويب.  
+- يحتوي على أمثلة عملية وصور توضيحية.  
+- السعر: 2 دولار (100 جنيه مصري)
+
+---
+
+## 🚀 كيفية الشراء
+
+يمكنك شراء الكتاب عبر:
 
 - [Gumroad](https://faragdev98.gumroad.com/l/htmlbook)  
 - [Payhip](https://payhip.com/b/2cJWp)  
 
-Or contact directly via WhatsApp for support and direct purchase:  
+أو التواصل مباشرة عبر واتساب للدعم والشراء:  
 [+20 106 604 7545](https://wa.me/201066047545)
 
 ---
 
-## 🖼️ Preview Images
+## 🖼️ صورة شهادة الكورس
 
-![Preview 1](https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg)  
-![Preview 2](https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg)
-
----
-
-## 📄 Repository Contents
-
-- `index.html` - Main landing page for the book purchase.
+![شهادة كورس كورسيرا](https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg)
 
 ---
 
-© 2025 FaragDev98 | All rights reserved.
+© 2025 FaragDev98 | جميع الحقوق محفوظة
