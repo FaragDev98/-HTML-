@@ -1,168 +1,107 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>📘 كتاب HTML للمبتدئين - FaragDev98</title>
-<style>
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #dce9fb 0%, #f5f7fa 100%);
-    margin: 0;
-    color: #222;
-    text-align: center;
-    padding: 20px;
-  }
-  .container {
-    max-width: 620px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(100, 115, 140, 0.15);
-    padding: 30px 25px;
-  }
-  img.cover {
-    width: 100%;
-    border-radius: 14px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 20px rgba(50, 75, 130, 0.2);
-    object-fit: contain;
-  }
-  h1 {
-    color: #1a237e;
-    font-weight: 700;
-    font-size: 2.4rem;
-    margin-bottom: 15px;
-  }
-  p.description {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 30px;
-  }
-  .price {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1565c0;
-    margin-bottom: 30px;
-  }
-  .btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
-  }
-  a.btn {
-    flex: 1 1 180px;
-    max-width: 220px;
-    padding: 15px 0;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 1.15rem;
-    text-decoration: none;
-    color: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  a.btn.gumroad {
-    background: #43a047;
-  }
-  a.btn.gumroad:hover {
-    background: #2e7d32;
-    box-shadow: 0 12px 30px rgba(46,125,50,0.5);
-    transform: translateY(-5px);
-  }
-  a.btn.payhip {
-    background: #fb8c00;
-  }
-  a.btn.payhip:hover {
-    background: #ef6c00;
-    box-shadow: 0 12px 30px rgba(239,108,0,0.5);
-    transform: translateY(-5px);
-  }
-  img.extra-image {
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(50, 75, 130, 0.1);
-    margin-bottom: 30px;
-    object-fit: contain;
-  }
-  .payment-info {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  .payment-info strong {
-    color: #1565c0;
-  }
-  .payment-info a {
-    color: #1565c0;
-    text-decoration: none;
-  }
-  .payment-info a:hover {
-    text-decoration: underline;
-  }
-  .footer {
-    font-size: 0.9rem;
-    color: #999;
-    margin-top: 40px;
-  }
-  @media (max-width: 480px) {
-    a.btn {
-      max-width: 100%;
-      flex: 1 1 100%;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>شراء كتاب HTML - FaragDev98</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f0f4ff);
+      color: #222;
+      text-align: center;
+      overflow-x: hidden;
     }
-  }
-</style>
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    h1 {
+      color: #0d47a1;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p.description {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+    .cover, .certificate {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      margin-bottom: 25px;
+    }
+    .price {
+      font-size: 1.6rem;
+      color: #00897b;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    a.btn {
+      padding: 14px 25px;
+      background: #673ab7;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(103,58,183,0.4);
+    }
+    a.btn:hover {
+      background: #512da8;
+      transform: scale(1.05);
+    }
+    .whatsapp {
+      background: #25d366;
+    }
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+    .footer {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
+
   <div class="container">
-    <img
-      src="https://i.postimg.cc/149htyPb/premium_photo-1721076216291-063e5f9d3141.jpg"
-      alt="غلاف كتاب HTML للمبتدئين"
-      class="cover"
-    />
     <h1>📘 كتاب HTML للمبتدئين</h1>
-    <p class="description">
-      اتقن HTML من الصفر بأسلوب مبسط ومرتب باللغة العربية<br />
-      مناسب لأي مبتدئ في عالم البرمجة، يشمل أمثلة وصور توضيحية.
-    </p>
+    <p class="description">تعلم HTML من البداية حتى الاحتراف باللغة العربية، بأسلوب مبسط وشامل مع أمثلة عملية.</p>
+
+    <!-- ✅ أنت أضف روابط صورك هنا -->
+    <img src="images/HTML_optimized-١.png" alt="غلاف الكتاب" class="cover" />
+    <img src="images/certificate-coursera.jpg" alt="شهادة" class="certificate" />
+
     <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
-    <div class="btn-group">
-      <a
-        href="https://faragdev98.gumroad.com/l/htmlbook"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn gumroad"
-        >اشترِ عبر Gumroad</a
-      >
-      <a
-        href="https://payhip.com/b/2cJWp"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn payhip"
-        >اشترِ عبر Payhip</a
-      >
+
+    <div class="btns">
+      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn">شراء من Gumroad</a>
+      <a href="https://payhip.com/b/2cJWp" class="btn">شراء من Payhip</a>
+      <a href="https://wa.me/201066047545" class="btn whatsapp">شراء عبر واتساب</a>
     </div>
-    <img
-      src="https://i.postimg.cc/149htyPb/premium_photo-1720534084908-bd8dca31a658.jpg"
-      alt="شهادة كورس كورسيرا"
-      class="extra-image"
-    />
-    <div class="payment-info">
-      <p><strong>طرق الدفع والدعم:</strong></p>
-      <p>فودافون كاش، أورنج كاش، وي كاش، أو باي بال</p>
-      <p>
-        <strong>للدعم والشراء المباشر عبر واتساب:</strong>
-        <a href="https://wa.me/201066047545" target="_blank"
-          >01066047545</a
-        >
-      </p>
+
+    <div class="footer">
+      جميع الحقوق محفوظة © 2025 FaragDev98  
     </div>
-    <div class="footer">© 2025 FaragDev98 | جميع الحقوق محفوظة</div>
   </div>
+
 </body>
 </html>
