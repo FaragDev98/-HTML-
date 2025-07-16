@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #ede7f6, #e1f5fe);
-      color: #222;
+      background: linear-gradient(135deg, #f3e5f5, #e8f5e9);
+      color: #333;
       text-align: center;
       animation: fadeIn 1.5s ease;
     }
@@ -20,7 +20,7 @@
     }
 
     header {
-      background: #7b1fa2;
+      background: #6a1b9a;
       color: white;
       padding: 15px 0;
       font-size: 1.4rem;
@@ -30,7 +30,7 @@
 
     @keyframes fadeHeader {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.1; }
+      50% { opacity: 0.2; }
     }
 
     .container {
@@ -38,7 +38,7 @@
       margin: 40px auto;
       background: #fff;
       border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       padding: 30px 25px;
     }
 
@@ -48,21 +48,14 @@
       margin-bottom: 10px;
     }
 
-    p.summary {
+    p.summary, p.description {
       font-size: 1.15rem;
       line-height: 1.9;
       color: #444;
       margin-bottom: 25px;
     }
 
-    p.description {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 25px;
-      color: #333;
-    }
-
-    .cover, .certificate {
+    .cover, .certificate, .animation {
       width: 100%;
       max-height: 420px;
       object-fit: cover;
@@ -73,32 +66,34 @@
 
     .price {
       font-size: 1.5rem;
-      color: #6a1b9a;
+      color: #2e7d32;
       font-weight: bold;
       margin: 20px 0;
     }
 
     .btns {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       gap: 15px;
       margin-bottom: 30px;
     }
 
     a.btn {
       padding: 14px 25px;
-      background: #8e24aa;
+      background: #7b1fa2;
       color: white;
       text-decoration: none;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       border-radius: 10px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(142, 36, 170, 0.3);
+      box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3);
+      width: 80%;
+      max-width: 300px;
     }
 
     a.btn:hover {
-      background: #6a1b9a;
+      background: #4a0072;
       transform: scale(1.05);
     }
 
@@ -110,15 +105,9 @@
       background: #1ebe5d;
     }
 
-    .footer {
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 35px;
-    }
-
     .instruction {
-      background: #f3e5f5;
-      padding: 15px;
+      background: #ede7f6;
+      padding: 20px;
       border-radius: 10px;
       margin-top: 30px;
       line-height: 1.8;
@@ -130,6 +119,17 @@
       font-size: 1.4rem;
       color: #6a1b9a;
       margin: 25px 0 15px;
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 35px 0 10px;
+    }
+
+    .animation {
+      margin-top: 40px;
+      max-height: 250px;
     }
   </style>
 </head>
@@ -150,31 +150,37 @@
       تعلم HTML من البداية حتى الاحتراف باللغة العربية، بأسلوب مبسط وشامل مع صور توضيحية.
     </p>
 
+    <!-- صورة الغلاف -->
     <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="cover" />
 
     <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
 
+    <!-- أزرار الشراء -->
     <div class="btns">
       <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn">شراء من Gumroad</a>
       <a href="https://payhip.com/b/2cJWp" class="btn">شراء من Payhip</a>
       <a href="https://wa.me/201066047545" class="btn whatsapp">شراء عبر واتساب</a>
+      <a href="download/تعلم إنجليزي.apk" class="btn" download>📲 تحميل تطبيق تعلم الإنجليزية</a>
     </div>
 
+    <!-- شهادة -->
     <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
 
+    <!-- تعليمات الشراء -->
     <div class="instruction">
       <strong>🔒 خطوات الشراء عبر واتساب:</strong><br>
       1. أرسل رسالة إلى الرقم: <a href="https://wa.me/201066047545" style="color:#00796b">01066047545</a><br>
-      2. اختر طريقة الدفع المناسبة (فودافون كاش / أورنج كاش / وي كاش / بايبال).<br>
+      2. اختر طريقة الدفع (فودافون كاش / أورنج كاش / وي كاش / بايبال).<br>
       3. بعد التحويل، أرسل صورة الإيصال.<br>
-      4. سيتم إرسال رابط تحميل الكتاب خلال دقائق.
+      4. سيتم إرسال رابط تحميل الكتاب فور التأكد.
     </div>
 
-    <h2 class="section-title">📲 تطبيق تعلم الإنجليزية بسهولة</h2>
-    <a href="download/تعلم إنجليزي.apk" class="btn" download>تحميل التطبيق الآن</a>
+    <!-- صورة متحركة -->
+    <img src="https://i.postimg.cc/yN9CQDXH/typing-animation.gif" alt="كاتب على الكمبيوتر" class="animation" />
 
     <div class="footer">
-      جميع الحقوق محفوظة © 2025 FaragDev98
+      جميع الحقوق محفوظة © 2025 FaragDev98<br>
+      <a href="#" style="color:#6a1b9a;">الشروط والأحكام</a> | <a href="#" style="color:#6a1b9a;">سياسة الخصوصية</a>
     </div>
   </div>
 
