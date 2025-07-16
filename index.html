@@ -8,18 +8,29 @@
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+      background: linear-gradient(135deg, #ede7f6, #e1f5fe);
       color: #222;
       text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     header {
-      background: #0d47a1;
-      color: #fff;
+      background: #7b1fa2;
+      color: white;
       padding: 15px 0;
       font-size: 1.4rem;
       font-weight: bold;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      animation: fadeHeader 4s ease-in-out infinite;
+    }
+
+    @keyframes fadeHeader {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.1; }
     }
 
     .container {
@@ -32,7 +43,7 @@
     }
 
     h1 {
-      color: #1a237e;
+      color: #4a148c;
       font-size: 2.3rem;
       margin-bottom: 10px;
     }
@@ -62,7 +73,7 @@
 
     .price {
       font-size: 1.5rem;
-      color: #2e7d32;
+      color: #6a1b9a;
       font-weight: bold;
       margin: 20px 0;
     }
@@ -77,17 +88,17 @@
 
     a.btn {
       padding: 14px 25px;
-      background: #5e35b1;
+      background: #8e24aa;
       color: white;
       text-decoration: none;
       font-size: 1.05rem;
       border-radius: 10px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(94, 53, 177, 0.3);
+      box-shadow: 0 4px 10px rgba(142, 36, 170, 0.3);
     }
 
     a.btn:hover {
-      background: #4527a0;
+      background: #6a1b9a;
       transform: scale(1.05);
     }
 
@@ -103,6 +114,22 @@
       font-size: 0.9rem;
       color: #777;
       margin-top: 35px;
+    }
+
+    .instruction {
+      background: #f3e5f5;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 30px;
+      line-height: 1.8;
+      color: #4a148c;
+      font-size: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      color: #6a1b9a;
+      margin: 25px 0 15px;
     }
   </style>
 </head>
@@ -134,6 +161,17 @@
     </div>
 
     <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
+
+    <div class="instruction">
+      <strong>🔒 خطوات الشراء عبر واتساب:</strong><br>
+      1. أرسل رسالة إلى الرقم: <a href="https://wa.me/201066047545" style="color:#00796b">01066047545</a><br>
+      2. اختر طريقة الدفع المناسبة (فودافون كاش / أورنج كاش / وي كاش / بايبال).<br>
+      3. بعد التحويل، أرسل صورة الإيصال.<br>
+      4. سيتم إرسال رابط تحميل الكتاب خلال دقائق.
+    </div>
+
+    <h2 class="section-title">📲 تطبيق تعلم الإنجليزية بسهولة</h2>
+    <a href="download/تعلم إنجليزي.apk" class="btn" download>تحميل التطبيق الآن</a>
 
     <div class="footer">
       جميع الحقوق محفوظة © 2025 FaragDev98
