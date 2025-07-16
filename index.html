@@ -20,17 +20,11 @@
     }
 
     header {
-      background: #6a1b9a;
+      background: #4a148c;
       color: white;
       padding: 15px 0;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      animation: fadeHeader 4s ease-in-out infinite;
-    }
-
-    @keyframes fadeHeader {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
     }
 
     .container {
@@ -91,11 +85,11 @@
     }
 
     .whatsapp {
-      background: #25d366;
+      background: #25d366 !important;
     }
 
     .whatsapp:hover {
-      background: #1ebe5d;
+      background: #1ebe5d !important;
     }
 
     .payment-options {
@@ -106,7 +100,7 @@
     }
 
     .pay-btn {
-      background: #4caf50;
+      background: #2196f3;
       color: white;
       border: none;
       padding: 12px;
@@ -118,7 +112,7 @@
     }
 
     .pay-btn:hover {
-      background: #388e3c;
+      background: #1565c0;
     }
 
     .price {
@@ -184,7 +178,7 @@
     <div class="btns">
       <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn">شراء من Gumroad</a>
       <a href="https://payhip.com/b/2cJWp" class="btn">شراء من Payhip</a>
-      <a href="https://wa.me/201066047545" class="btn whatsapp">شراء عبر واتساب</a>
+      <a id="whatsappBtn" href="#" class="btn whatsapp">شراء عبر واتساب</a>
       <a href="download/تعلم إنجليزي.apk" class="btn" download>📲 تحميل تطبيق تعلم الإنجليزية</a>
     </div>
 
@@ -196,17 +190,17 @@
       <button class="pay-btn" onclick="copyText('Farajbdallh891@gmail.com')">📧 بايبال: Farajbdallh891@gmail.com</button>
     </div>
 
-    <!-- شهادة -->
-    <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
-
-    <!-- تعليمات الشراء -->
+    <!-- شرح خطوات الشراء -->
     <div class="instruction">
       <strong>🔒 خطوات الشراء عبر واتساب:</strong><br>
-      1. أرسل رسالة إلى الرقم: <a href="https://wa.me/201066047545">01066047545</a><br>
+      1. انسخ رقم الدفع من الأعلى وأرسل رسالة إلى: <a href="https://wa.me/201066047545">01066047545</a><br>
       2. اختر طريقة الدفع المناسبة.<br>
       3. أرسل صورة الإيصال.<br>
       4. سيتم إرسال رابط الكتاب خلال دقائق.
     </div>
+
+    <!-- صورة الشهادة -->
+    <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
 
     <!-- صورة متحركة -->
     <img src="https://i.postimg.cc/yN9CQDXH/typing-animation.gif" alt="كاتب على الكمبيوتر" class="animation" />
@@ -222,6 +216,11 @@
       navigator.clipboard.writeText(text);
       alert("✅ تم نسخ البيانات: " + text);
     }
+
+    // زر واتساب برسالة تلقائية
+    document.getElementById("whatsappBtn").addEventListener("click", function() {
+      window.open("https://wa.me/201066047545?text=لقد%20تم%20الدفع%20وأريد%20الحصول%20على%20الكتاب", "_blank");
+    });
   </script>
 
 </body>
