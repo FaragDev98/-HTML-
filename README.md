@@ -1,6 +1,6 @@
 # HTML Beginner's Book - FaragDev98
 
-![HTML Animated Cover](https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif)
+![HTML Book Cover Animated](https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif)
 
 Welcome to the **HTML Beginner's Book** repository!  
 This repository contains the complete **HTML book for beginners**, designed to teach you HTML from scratch in Arabic with clear examples and illustrations.
