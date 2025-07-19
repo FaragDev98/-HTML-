@@ -19,6 +19,38 @@
       to { opacity: 1; }
     }
 
+    /* شريط التواصل فوق الهيدر */
+    .top-contact {
+      background: #4a148c;
+      color: white;
+      padding: 5px 20px;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+      align-items: center;
+      direction: ltr;
+    }
+
+    .top-contact a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+    }
+
+    .top-contact a:hover {
+      opacity: 0.7;
+    }
+
+    .top-contact img.icon {
+      width: 18px;
+      height: 18px;
+    }
+
     header {
       background: #4a148c;
       color: white;
@@ -28,13 +60,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      direction: rtl;
     }
 
     header .logo-space {
-      width: 30px;
-      height: 30px;
-      background: #fff2;
+      width: 40px;
+      height: 40px;
+      background: url('icons/ai-icon.png') no-repeat center center;
+      background-size: contain;
       border-radius: 50%;
+      flex-shrink: 0;
     }
 
     .nav {
@@ -44,6 +79,7 @@
       justify-content: center;
       gap: 30px;
       font-size: 1rem;
+      direction: rtl;
     }
 
     .nav a {
@@ -62,6 +98,7 @@
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       padding: 30px 25px;
+      direction: rtl;
     }
 
     .cover {
@@ -103,6 +140,8 @@
       transition: all 0.3s ease;
       width: 80%;
       max-width: 300px;
+      display: inline-block;
+      text-align: center;
     }
 
     a.btn:hover {
@@ -158,6 +197,7 @@
       color: #4a148c;
       font-size: 1rem;
       text-align: right;
+      direction: rtl;
     }
 
     .instruction a {
@@ -170,6 +210,7 @@
       flex-direction: column;
       gap: 10px;
       margin: 30px auto;
+      direction: rtl;
     }
 
     .pay-btn {
@@ -202,6 +243,7 @@
       color: #777;
       margin: 35px 0 10px;
       direction: rtl;
+      text-align: center;
     }
 
     .footer a {
@@ -217,16 +259,29 @@
 </head>
 <body>
 
+  <!-- شريط التواصل -->
+  <div class="top-contact" dir="ltr">
+    <a href="https://wa.me/201091838789" target="_blank" title="واتساب">
+      <img class="icon" src="icons/whatsapp.svg" alt="WhatsApp" /> واتساب
+    </a>
+    <a href="https://facebook.com/FaragDev98" target="_blank" title="فيسبوك">
+      <img class="icon" src="icons/facebook.svg" alt="Facebook" /> فيسبوك
+    </a>
+    <a href="mailto:Faragbdallh891@gmail.com" title="البريد الإلكتروني">
+      <img class="icon" src="icons/email.svg" alt="Email" /> البريد الإلكتروني
+    </a>
+  </div>
+
   <header>
     <div>FaragDev98</div>
-    <div class="logo-space"></div>
+    <div class="logo-space" title="شعار AI"></div>
   </header>
 
-  <div class="nav">
+  <nav class="nav">
     <a href="#">الرئيسية</a>
     <a href="#">خدمات</a>
     <a href="#">مقال</a>
-  </div>
+  </nav>
 
   <div class="container">
 
@@ -273,8 +328,8 @@
     <div class="footer">
       جميع الحقوق محفوظة © 2025 FaragDev98<br>
       <a href="terms.html">الشروط والأحكام</a> |
-      <a href="privacy.html">سياسة الخصوصية</a> |
-      <a href="protection.html">صفحة الحماية</a>
+      <a href="legal/privacy.html">سياسة الخصوصية</a> |
+      <a href="legal/protection.html">صفحة الحماية</a>
     </div>
   </div>
 
