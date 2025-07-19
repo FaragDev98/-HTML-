@@ -43,68 +43,50 @@
     }
 
     nav.navbar {
-      background: #7b1fa2;
+      background: #fff;
       padding: 12px 0;
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 15px;
       font-size: 1.1rem;
       direction: rtl;
       font-weight: 600;
       user-select: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin: 15px auto;
+      max-width: 600px;
     }
 
     nav.navbar a {
+      padding: 10px 22px;
       color: white;
       text-decoration: none;
-      padding: 5px 10px;
-      position: relative;
-      transition: color 0.3s ease;
+      border-radius: 25px;
+      font-weight: 700;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
     }
 
     nav.navbar a:hover {
-      text-decoration: underline;
-      color: #d1c4e9;
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    /* قائمة تواصل تظهر عند المرور على رابط تواصل */
-    nav.navbar .contact-dropdown {
-      position: relative;
-      cursor: pointer;
+    nav.navbar a.home {
+      background-color: #7b1fa2; /* بنفسجي */
     }
 
-    nav.navbar .contact-dropdown:hover .dropdown-content {
-      display: flex;
+    nav.navbar a.services {
+      background-color: #2196f3; /* أزرق */
     }
 
-    nav.navbar .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 35px;
-      right: 0;
-      background: #7b1fa2;
-      border-radius: 6px;
-      box-shadow: 0 4px 10px rgba(123,31,162,0.4);
-      flex-direction: column;
-      min-width: 160px;
-      z-index: 1000;
+    nav.navbar a.blog {
+      background-color: #25d366; /* أخضر */
     }
 
-    nav.navbar .dropdown-content a {
-      color: white;
-      padding: 10px 15px;
-      text-align: right;
-      border-bottom: 1px solid #9c27b0;
-      font-size: 0.95rem;
-    }
-
-    nav.navbar .dropdown-content a:last-child {
-      border-bottom: none;
-    }
-
-    nav.navbar .dropdown-content a:hover {
-      background: #4a0072;
-      text-decoration: none;
+    nav.navbar a.contact {
+      background-color: #f44336; /* أحمر */
     }
 
     .container {
@@ -281,17 +263,10 @@
   </header>
 
   <nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
-    <a href="#">الرئيسية</a>
-    <a href="#">خدمات</a>
-    <a href="#">مقال</a>
-    <div class="contact-dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
-      تواصل ▼
-      <div class="dropdown-content" role="menu" aria-label="روابط التواصل">
-        <a href="https://wa.me/201091838789" target="_blank" role="menuitem" tabindex="-1" aria-label="واتساب">واتساب</a>
-        <a href="https://facebook.com/FaragDev98" target="_blank" role="menuitem" tabindex="-1" aria-label="فيسبوك">فيسبوك</a>
-        <a href="mailto:Faragbdallh891@gmail.com" role="menuitem" tabindex="-1" aria-label="البريد الإلكتروني">البريد الإلكتروني</a>
-      </div>
-    </div>
+    <a href="index.html" class="home">الرئيسية</a>
+    <a href="services.html" class="services">خدمات</a>
+    <a href="blog.html" class="blog">مقال</a>
+    <a href="contact.html" class="contact">تواصل</a>
   </nav>
 
   <div class="container">
@@ -333,8 +308,6 @@
     </div>
 
     <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
-
-    <!-- مكان الصورة المتحركة التي ستضيفها لاحقًا -->
 
     <div class="footer">
       جميع الحقوق محفوظة © 2025 FaragDev98<br>
