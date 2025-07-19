@@ -22,9 +22,37 @@
     header {
       background: #4a148c;
       color: white;
-      padding: 15px 0;
+      padding: 15px 20px;
       font-size: 1.5rem;
       font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo-space {
+      width: 30px;
+      height: 30px;
+      background: #fff2;
+      border-radius: 50%;
+    }
+
+    .nav {
+      background: #7b1fa2;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1rem;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -68,28 +96,73 @@
 
     a.btn {
       padding: 14px 25px;
-      background: #7b1fa2;
       color: white;
       text-decoration: none;
       font-size: 1.1rem;
       border-radius: 10px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3);
       width: 80%;
       max-width: 300px;
     }
 
     a.btn:hover {
-      background: #4a0072;
       transform: scale(1.05);
     }
 
-    .whatsapp {
-      background: #25d366 !important;
+    .btn-purple {
+      background: #7b1fa2;
+      box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3);
     }
 
-    .whatsapp:hover {
-      background: #1ebe5d !important;
+    .btn-purple:hover {
+      background: #4a0072;
+    }
+
+    .btn-blue {
+      background: #2196f3;
+    }
+
+    .btn-blue:hover {
+      background: #1565c0;
+    }
+
+    .btn-green {
+      background: #25d366;
+    }
+
+    .btn-green:hover {
+      background: #1ebe5d;
+    }
+
+    .btn-black {
+      background: #333;
+    }
+
+    .btn-black:hover {
+      background: #000;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #2e7d32;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .instruction {
+      background: #ede7f6;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      line-height: 1.8;
+      color: #4a148c;
+      font-size: 1rem;
+      text-align: right;
+    }
+
+    .instruction a {
+      color: #4a148c;
+      text-decoration: underline;
     }
 
     .payment-options {
@@ -116,30 +189,7 @@
       background: #1565c0;
     }
 
-    .price {
-      font-size: 1.5rem;
-      color: #2e7d32;
-      font-weight: bold;
-      margin: 20px 0;
-    }
-
-    .instruction {
-      background: #ede7f6;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 30px;
-      line-height: 1.8;
-      color: #4a148c;
-      font-size: 1rem;
-      text-align: right;
-    }
-
-    .instruction a {
-      color: #4a148c;
-      text-decoration: underline;
-    }
-
-    .certificate, .animation {
+    .certificate {
       width: 100%;
       max-height: 400px;
       border-radius: 10px;
@@ -151,7 +201,7 @@
       font-size: 0.9rem;
       color: #777;
       margin: 35px 0 10px;
-      direction: ltr;
+      direction: rtl;
     }
 
     .footer a {
@@ -167,11 +217,19 @@
 </head>
 <body>
 
-  <header>FaragDev98</header>
+  <header>
+    <div>FaragDev98</div>
+    <div class="logo-space"></div>
+  </header>
+
+  <div class="nav">
+    <a href="#">الرئيسية</a>
+    <a href="#">خدمات</a>
+    <a href="#">مقال</a>
+  </div>
 
   <div class="container">
 
-    <!-- صورة الغلاف -->
     <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="cover" />
 
     <h1>📘 كتاب HTML للمبتدئين</h1>
@@ -187,24 +245,20 @@
 
     <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
 
-    <!-- أزرار الشراء -->
     <div class="btns">
-      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn">شراء من Gumroad</a>
-      <a href="https://payhip.com/b/2cJWp" class="btn">شراء من Payhip</a>
-      <a id="whatsappBtn" href="#" class="btn whatsapp">شراء عبر واتساب</a>
-      <a href="download/تعلم إنجليزي.apk" class="btn" download>📲 تحميل تطبيق تعلم الإنجليزية</a>
+      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn btn-purple">شراء من Gumroad</a>
+      <a href="https://payhip.com/b/2cJWp" class="btn btn-blue">شراء من Payhip</a>
+      <a id="whatsappBtn" href="#" class="btn btn-green">شراء عبر واتساب</a>
+      <a href="download/تعلم إنجليزي.apk" class="btn btn-black" download>📲 تحميل تطبيق تعلم الإنجليزية</a>
     </div>
 
-<!-- شرح خطوات الشراء -->
     <div class="instruction">
-      <strong>🔒 خطوات الشراء عبر واتساب:</strong><br>
-      1. انسخ رقم الدفع من الأعلى وأرسل رسالة إلى: <a href="https://wa.me/201066047545" target="_blank" rel="noopener">01066047545</a><br>
-      2. اختر طريقة الدفع المناسبة.<br>
-      3. أرسل صورة الإيصال.<br>
-      4. سيتم إرسال رابط الكتاب خلال دقائق.
+      <strong>🔒 طريقة شراء الكتاب عبر واتساب:</strong><br>
+      - انسخ رقم الدفع المطلوب من الأزرار التالية.<br>
+      - أرسل رسالة إلى: <a href="https://wa.me/201066047545" target="_blank">01066047545</a> تتضمن صورة الإيصال وطريقة الدفع.<br>
+      - سيتم إرسال رابط تحميل الكتاب مباشرة بعد التأكد.
     </div>
 
-    <!-- أزرار الدفع -->
     <div class="payment-options">
       <button class="pay-btn" onclick="copyText('01066047545')">📱 فودافون كاش: 01066047545</button>
       <button class="pay-btn" onclick="copyText('01285895096')">📱 أورنج كاش: 01285895096</button>
@@ -212,15 +266,15 @@
       <button class="pay-btn" onclick="copyText('Farajbdallh891@gmail.com')">📧 بايبال: Farajbdallh891@gmail.com</button>
     </div>
 
-    <!-- صورة الشهادة -->
     <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
 
-    <!-- صورة متحركة -->
-    <img src="https://i.postimg.cc/yN9CQDXH/typing-animation.gif" alt="كاتب على الكمبيوتر" class="animation" />
+    <!-- مكان الصورة المتحركة التي ستضيفها لاحقًا -->
 
-    <div class="footer" dir="rtl">
+    <div class="footer">
       جميع الحقوق محفوظة © 2025 FaragDev98<br>
-      <a href="terms.html">الشروط والأحكام</a> | <a href="privacy.html">سياسة الخصوصية</a>
+      <a href="terms.html">الشروط والأحكام</a> |
+      <a href="privacy.html">سياسة الخصوصية</a> |
+      <a href="protection.html">صفحة الحماية</a>
     </div>
   </div>
 
@@ -233,7 +287,6 @@
       });
     }
 
-    // زر واتساب برسالة تلقائية
     document.getElementById("whatsappBtn").addEventListener("click", function(e) {
       e.preventDefault();
       const whatsappURL = "https://wa.me/201066047545?text=لقد%20تم%20الدفع%20وأريد%20الحصول%20على%20الكتاب";
